@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng tuyển việc làm</title>
+  </head>
+  <body>
+    <h2>Nộp hồ sơ ứng tuyển</h2>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <fieldset style="margin-bottom: 20px">
+        <legend>Thông tin liên hệ</legend>
+        <div style="margin-bottom: 15px">
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="phone">Số điện thoại:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="0912345678"
+            title="Vui lòng nhập đúng 10 số, bắt đầu bằng 0, số thứ hai không được là 0 nha, nhập cái sđt thiệt á!?"
+            pattern="[0][1-9][0-9]{8}"
+            required
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Hồ sơ đính kèm</legend>
+        <label for="resume">Tải lên CV (Định dạng PDF/Word):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+      </fieldset>
+      <button type="submit" style="margin-top: 20px">Nộp hồ sơ</button>
+    </form>
+  </body>
+</html>

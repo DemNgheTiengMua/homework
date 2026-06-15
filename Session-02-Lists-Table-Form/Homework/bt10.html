@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hóa Đơn</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      .total {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Chi tiết Hóa đơn Mua hàng</h2>
+      <table>
+        <caption>
+          Hóa đơn điện tử#HD-20260310
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Chi tiết</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Áo thun Lập trình viên</td>
+            <td>
+              <ul>
+                <li>Màu sắc: Đen</li>
+                <li>Kích cỡ: XL</li>
+                <li>Chất liệu: Cotton 100%</li>
+              </ul>
+            </td>
+            <td>250.000đ</td>
+            <td>250.000đ</td>
+          </tr>
+          <tr>
+            <td>Bàn phím cơ bản</td>
+            <td>
+              <ul>
+                <li>Switch: Blue (Loại ồn điên)</li>
+                <li>Layout: TKL</li>
+              </ul>
+            </td>
+            <td>800.000đ</td>
+            <td>800.000đ</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4" class="total">Tổng tiền thanh toán: 1.050.000đ</th>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+    </section>
+    <section>
+      <h2>Đánh giá trải nghiệm mua hàng</h2>
+      <form>
+        <fieldset style="margin-bottom: 20px">
+          <legend>Phản hồi của bạn</legend>
+          <div style="margin-bottom: 20px">
+            <label for="stars">Mức độ hài lòng:</label>
+            <select id="stars" name="stars" required>
+              <option value="">-- Vui lòng chọn số sao --</option>
+              <option value="1">★</option>
+              <option value="2">★★</option>
+              <option value="3">★★★</option>
+              <option value="4">★★★★</option>
+              <option value="5">★★★★★</option>
+            </select>
+          </div>
+          <div>
+            <label for="comment">Lời nhận xét chi tiết:</label> <br />
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."
+              cols="70"
+              rows="5"
+            ></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">Gửi phản hồi</button>
+      </form>
+    </section>
+  </body>
+</html>

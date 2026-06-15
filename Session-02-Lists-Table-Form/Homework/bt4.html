@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch công tác tuần</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lịch Công Tác Tuần</h2>
+    <table>
+      <caption>
+        Lịch làm việc chi tiết từ Thứ 2 đến Thứ 6
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Thời gian</th>
+          <th scope="col">Thứ 2</th>
+          <th scope="col">Thứ 3</th>
+          <th scope="col">Thứ 4</th>
+          <th scope="col">Thứ 5</th>
+          <th scope="col">Thứ 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Sáng</th>
+          <td colspan="3">Họp giao ban</td>
+          <td rowspan="2">Khảo sát thực địa</td>
+          <td>Làm việc tại văn phòng</td>
+        </tr>
+        <tr>
+          <th scope="row">Chiều</th>
+          <td>Xử lý email</td>
+          <td>Lên kế hoạch</td>
+          <td>Họp nhóm</td>
+          <td>Báo cáo tuần</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

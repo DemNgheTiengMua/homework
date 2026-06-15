@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biểu mẫu khảo sát dịch vụ</title>
+    <style>
+      fieldset {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Khảo sát dịch vụ khách hàng</h2>
+    <form>
+      <div style="margin-bottom: 15px">
+        <label for="age">Độ tuổi của bạn:</label>
+        <input id="age" type="number" />
+      </div>
+
+      <fieldset>
+        <legend>Giới tính của bạn là gì?</legend>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Nữ</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Khác</label>
+      </fieldset>
+      <fieldset>
+        <legend>Dịch vụ bạn đang quan tâm (có thể chọn nhiều):</legend>
+        <input type="checkbox" id="website" name="services" value="service1" />
+        <label for="website">Website</label>
+        <input type="checkbox" id="mobile" name="services" value="service2" />
+        <label for="mobile">Mobile App</label>
+        <input
+          type="checkbox"
+          id="marketing"
+          name="services"
+          value="service3"
+        />
+        <label for="marketing">Marketing</label>
+      </fieldset>
+      <div style="margin-bottom: 15px">
+        <label for="country">Quốc gia đang sinh sống:</label>
+        <select name="country" id="country">
+          <option value="">-- Vui lòng chọn --</option>
+          <option value="vietnam">Việt Nam</option>
+          <option value="usa">Mỹ</option>
+          <option value="japan">Nhật Bản</option>
+          <option value="other">Khác</option>
+        </select>
+      </div>
+      <button type="submit">Gửi thông tin</button>
+    </form>
+  </body>
+</html>
