@@ -1,0 +1,34 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: square;
+}
+
+.Roadmap-tab {
+  width: 38%;
+}
+
+.Roadmap-Des {
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.Roadmap-list > .Roadmap-item {
+  color: red;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.Roadmap-sublist > li {
+  color: black;
+  font-weight: normal;
+  line-height: 1.6;
+}

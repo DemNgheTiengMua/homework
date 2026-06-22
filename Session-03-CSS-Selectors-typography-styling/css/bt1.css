@@ -1,0 +1,11 @@
+.banner {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #acc8e5;
+  color: #112a46;
+  height: 180px;
+}

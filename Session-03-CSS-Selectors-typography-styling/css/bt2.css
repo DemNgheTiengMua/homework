@@ -1,0 +1,21 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.author-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.author-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}
+.author-bio {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.author-card {
+  padding: 20px;
+  border: solid 1.5px #cccccc;
+  width: 400px;
+}
