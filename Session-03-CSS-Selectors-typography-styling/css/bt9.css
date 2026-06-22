@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: 5vh;
+  background-color: #f5f6f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+}
+
+.price-tag {
+  padding: 20px 20px;
+  background-color: white;
+  border: #ccc 1px solid;
+  border-radius: 10px;
+  max-height: auto;
+  min-width: 210px;
+}
+
+.price-tag h2 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.price-tag h3 {
+  font-size: 1.5rem;
+  color: #0d2a46;
+  margin-bottom: 20px;
+}
+
+.price-tag h3::after {
+  content: "/tháng";
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.price-tag p {
+  padding: 2px 2px;
+  margin-bottom: 13px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.price-tag > button {
+  margin-top: 12px;
+  padding: 10px;
+  width: 60%;
+  background-color: #688adf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price-tag > .benefit:nth-last-of-type(2) {
+  border-top: #ccc 0.5px solid;
+  border-bottom: #ccc 0.5px solid;
+  padding: 7px;
+}
+
+.pricing > .price-tag:nth-child(2) {
+  background-color: #e9efff;
+  border: #0066ff 2px solid;
+  border-radius: 10px;
+  min-height: 290px;
+  min-width: 210px;
+}
+
+.pricing > .price-tag:nth-child(2) > h2 {
+  font-weight: 800;
+  color: rgb(47, 118, 224);
+}
+
+.pricing > .price-tag:nth-child(2) > h3 {
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.pricing > .price-tag:nth-child(2) > p {
+  font-weight: 500;
+  border: none;
+}
+
+.price-tag > button:hover {
+  background-color: #0d2a46;
+}
+
+.price-tag:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+}
+
+.price-tag:hover h2 {
+  font-weight: 800;
+}
+
+.price-tag:hover p {
+  font-weight: 500;
+}

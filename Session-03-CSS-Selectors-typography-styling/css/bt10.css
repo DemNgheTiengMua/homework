@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(45, 52, 60, 0.04), rgba(45, 52, 60, 0.8)),
+    url("https://images2.alphacoders.com/941/thumb-1920-941898.jpg") no-repeat
+      center center/cover;
+  color: white;
+}
+
+.hero-main > h1 {
+  text-transform: capitalize;
+  font-size: 6rem;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.hero-main > h1::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 2px;
+  background: aqua;
+}
+
+.hero-main > h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+.hero-main > h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 24px;
+  color: #ccc;
+}
+.hero-main > p {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: aqua;
+}
+.hero-main > .button {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 12px 32px;
+  border: aqua solid 1px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  color: aqua;
+}
+
+.hero-main > .button:hover {
+  background: white;
+  color: black;
+}
+
+.hero-main > .button input[type="file"] {
+  display: none;
+}
