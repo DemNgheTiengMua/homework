@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: block;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      .popup-main {
+        width: 600px;
+        /* height: 236px; */
+        height: fit-content;
+        background-color: #fff;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .popup-main > h2 {
+        font-size: 24px;
+        color: red;
+        font-weight: bold;
+      }
+
+      .popup-main > p {
+        font-size: 20px;
+        color: #000;
+      }
+
+      .popup-main > form > input {
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding-left: 10px;
+        margin-right: 12px;
+      }
+
+      .popup-main > form > button {
+        width: 124px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: blue;
+        color: #fff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="popup-main">
+      <h2>Đăng ký nhận khuyến mãi!</h2>
+      <p>
+        Nhập email của bạn để không bỏ lỡ những deal "Siêu Sale Công Nghệ" mới
+        nhất từ chúng tôi.
+      </p>
+      <form action="" style="margin: 20px">
+        <input type="email" placeholder="Nhập địa chỉ email..." />
+        <button>Đăng ký ngay</button>
+      </form>
+    </section>
+  </body>
+</html>

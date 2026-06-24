@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+      }
+      body {
+        display: block;
+        text-align: center;
+      }
+      .product-list {
+        list-style: none;
+        display: block;
+        font-size: 0;
+      }
+      .product-list > .products {
+        display: inline-block;
+        width: 33.33%;
+        height: auto;
+        border: 1px solid rgb(50, 51, 52);
+        padding: 20px;
+        font-size: 16px;
+        vertical-align: top;
+      }
+
+      .product-list > .products > h2 {
+        text-transform: capitalize;
+      }
+      .product-list > .products > p {
+        height: 52px;
+        font-size: 14px;
+        color: rgb(50, 51, 52);
+      }
+      .product-list > .products > h3 {
+        color: rgb(237, 11, 11);
+      }
+      .product-list > .products > h3::after {
+        content: " VNĐ";
+      }
+      .product-list > .products > button {
+        border: 1px solid rgb(0, 132, 255);
+        background-color: rgb(0, 132, 255);
+        color: white;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-weight: 500;
+        margin-bottom: 32px;
+      }
+
+      @media (max-width: 768px) {
+        .product-list > .products {
+          width: 100%;
+          margin-bottom: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Danh Sách Sản Phẩm Nổi Bật</h1>
+    <ul class="product-list">
+      <li class="products">
+        <h2>laptop gaming cao cấp</h2>
+        <p>
+          Hiệu năng vượt trội, màn hình 144hz cho trải nghiệm chơi game mượt mà.
+        </p>
+        <h3>25.000.000</h3>
+        <button>Mua ngay</button>
+      </li>
+      <li class="products">
+        <h2>điện thoại chụp ảnh khủng</h2>
+        <p>Camera 108MP, pin trâu 5000mAh, sạc nhanh 65W.</p>
+        <h3>12.500.000</h3>
+        <button>Mua ngay</button>
+      </li>
+      <li class="products">
+        <h2>tai nghe chống ồn chủ động</h2>
+        <p>Cách âm tuyệt đối, âm thanh vòm 360 độ, nghe nhạc cực đã.</p>
+        <h3>4.200.000</h3>
+        <button>Mua ngay</button>
+      </li>
+    </ul>
+  </body>
+</html>
