@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - About</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .about-card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about-card > img {
+        border-radius: 50%;
+        object-fit: cover;
+        height: 35%;
+        width: 35%;
+        padding: 8%;
+      }
+
+      .about-card > h2 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+      }
+
+      .about-card > p {
+        margin: 4%;
+        font-size: 1rem;
+        font-style: italic;
+      }
+
+      .about-card > p::before {
+        content: '"';
+      }
+
+      .about-card > p::after {
+        content: '"';
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-card">
+      <img
+        src="./media/590274419_25000891046268913_2878157870353336212_n.jpg"
+        alt="avatar"
+      />
+      <h2>nguyễn văn a</h2>
+      <p>Thái độ quyết định trình độ</p>
+    </section>
+  </body>
+</html>

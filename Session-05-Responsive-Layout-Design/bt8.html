@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      h2 {
+        margin: 14px;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #222222;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* overflow: hidden; */
+      }
+
+      .gallery {
+        width: 95%;
+        height: calc(100% - 56px);
+        background-color: #333333;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        /* align-items: center;
+        gap: 5px; */
+        list-style-type: none;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 14px;
+      }
+
+      .photos {
+        width: 32%;
+        height: 30%;
+      }
+
+      .photos > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>PHOTO GALLERY</h2>
+    <ul class="gallery">
+      <li class="photos"><img src="./media/set-indoor-11-2k.png" alt="" /></li>
+      <li class="photos">
+        <img src="./media/set-indoor-11-b-2k.png" alt="" />
+      </li>
+      <li class="photos">
+        <img src="./media/set-indoor-11-c-2k.png" alt="" />
+      </li>
+      <li class="photos">
+        <img src="./media/set-indoor-11-d-2k.png" alt="" />
+      </li>
+      <li class="photos"><img src="./media/set-indoor-12-2k.png" alt="" /></li>
+      <li class="photos">
+        <img src="./media/set-indoor-12-b-2k.png" alt="" />
+      </li>
+      <li class="photos">
+        <img src="./media/set-indoor-12-c-2k.png" alt="" />
+      </li>
+      <li class="photos">
+        <img src="./media/set-indoor-12-d-2k.png" alt="" />
+      </li>
+      <li class="photos"><img src="./media/tb-10-03-b.png" alt="" /></li>
+    </ul>
+  </body>
+</html>

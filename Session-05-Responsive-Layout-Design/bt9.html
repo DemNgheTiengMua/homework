@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt Lịch Khám Răng</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        height: fit-content;
+        width: 650px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .info {
+        padding: 30px;
+        color: white;
+        background-color: #1d72f2;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        order: 1;
+      }
+
+      .booking {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+      }
+
+      .booking form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .booking label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      .booking input,
+      .booking select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .booking button {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #1d72f2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          height: fit-content;
+          width: 800px;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 50%;
+          order: 0;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 0px;
+          align-self: stretch;
+        }
+
+        .booking {
+          width: 50%;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <h2>Nha Khoa Smile Care</h2>
+        <p>
+          Nụ cười tự tin là chìa khóa mở ra những cơ hội mới. Chúng tôi cam kết
+          mang lại trải nghiệm chăm sóc răng miệng không đau với công nghệ tiên
+          tiến nhất đến từ Châu Âu.
+        </p>
+        <ul>
+          <li>Đội ngũ bác sĩ chuyên khoa hơn 10 năm kinh nghiệm</li>
+          <li>Trang thiết bị X-Quang 3D hiện đại nhất</li>
+          <li>Vô trùng tuyệt đối theo tiêu chuẩn quốc tế</li>
+          <li>Bảo hành trọn đời dịch vụ Răng sứ</li>
+        </ul>
+      </div>
+      <div class="booking">
+        <h2>Đặt Lịch Khám Ngay</h2>
+        <form>
+          <label>Họ và tên</label>
+          <input type="text" placeholder="Nhập tên của bạn" />
+          <label>Số điện thoại</label>
+          <input type="tel" placeholder="Nhập số điện thoại cần liên hệ" />
+          <label>Dịch vụ cần tư vấn</label>
+          <select>
+            <option>Khám tổng quát & Lấy cao răng</option>
+            <option>Tẩy trắng răng</option>
+            <option>Răng sứ thẩm mỹ</option>
+            <option>Niềng răng</option>
+          </select>
+          <button type="submit">Xác Nhận Đặt Lịch</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

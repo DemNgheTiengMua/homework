@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự Án Nổi Bật</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 40px;
+      }
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        padding-top: 0;
+        gap: 40px;
+      }
+
+      .project-card {
+        display: flex;
+        border-radius: 8px;
+        box-shadow: 0 5px 8px #ccc;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+      }
+
+      .project-card:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .project-card > img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .project-info {
+        width: 60%;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Các Dự Án Nổi Bật</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="./media/download.png" alt="Web App E-commerce" />
+        <div class="project-info">
+          <h3>Dự án Web App E-commerce</h3>
+          <p>
+            Hệ thống quản lý bán hàng toàn diện, tích hợp thanh toán trực tuyến,
+            giỏ hàng minh bạch và quản lý kho thông minh. Ứng dụng xây dựng trên
+            React, đem lại tốc độ nhanh và trải nghiệm mượt mà.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fG1ldHJpY3N8ZW58MHx8fHwxNzY3MTY1ODU3fDA&ixlib=rb-4.1.0&q=80&w=1200"
+          alt="Data Dashboard ERP"
+        />
+        <div class="project-info">
+          <h3>Dự án Data Dashboard ERP</h3>
+          <p>
+            Bảng điều khiển phân tích dữ liệu trực quan cho doanh nghiệp. Cho
+            phép người dùng tuỳ chỉnh báo cáo, thống kê doanh thu theo thời gian
+            thực với biểu đồ tương tác 3D mạnh mẽ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

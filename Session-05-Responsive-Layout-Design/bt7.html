@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .services {
+        list-style: none;
+        align-items: center;
+        display: flex;
+        gap: 40px;
+        height: 500px;
+      }
+
+      .service-card {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-shadow: 0 5px 8px #ccc;
+        padding: 25px;
+      }
+
+      .service-card > h2 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+      }
+
+      .service-card > h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .service-card > p {
+        align-self: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .service-card > button {
+        padding: 10px 0;
+        width: 100%;
+        margin-top: 10px;
+        font-weight: bold;
+        border-radius: 4px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      .service-card:nth-child(2) {
+        background-color: #007bff;
+        color: white;
+        box-shadow: 0 5px 10px #007bff;
+        align-self: flex-start;
+      }
+      .service-card:nth-child(2) > button {
+        background-color: white;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="services">
+      <li class="service-card">
+        <h2>Cơ bản</h2>
+        <h3>Miễn phí</h3>
+        <p>1 Dự án</p>
+        <p>100MB Lưu trữ</p>
+        <p>Hỗ trợ Email</p>
+        <button>Bắt đầu ngay</button>
+      </li>
+      <li class="service-card">
+        <h2>Chuyên nghiệp</h2>
+        <h3>99.000đ/th</h3>
+        <p>Dự án Không Giới Hạn</p>
+        <p>10GB Lưu trữ</p>
+        <p>Hỗ trợ 24/7</p>
+        <p>Domain Tùy Chỉnh</p>
+        <button>Nâng cấp</button>
+      </li>
+      <li class="service-card">
+        <h2>Doanh nghiệp</h2>
+        <h3>Liên hệ</h3>
+        <p>Gói tùy chọn đầy đủ</p>
+        <p>Dung lượng cao nhất</p>
+        <p>Tư vấn riêng biệt</p>
+        <button>Tìm hiểu thêm</button>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đội Ngũ Phát Triển</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+      }
+
+      body > h2 {
+        margin: 24px 0;
+        font-size: 2rem;
+        color: #333;
+      }
+
+      .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1100px;
+        padding: 0 48px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 16px;
+        padding: 16px;
+        flex-basis: 300px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        border-top: 4px solid #4caf50;
+      }
+
+      .avatar {
+        font-size: 36px;
+        margin-bottom: 16px;
+        background-color: #ccc;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card h3 {
+        margin: 8px 0;
+      }
+      .role {
+        font-size: 0.9rem;
+        color: #4caf50;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      .bio {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Đội Ngũ Phát Triển</h2>
+    <ul class="team">
+      <li class="card">
+        <div class="avatar">😊</div>
+        <h3>Trần Tuấn Anh</h3>
+        <p class="role">FRONTEND DEVELOPER</p>
+        <p class="bio">
+          Chuyên gia về ReactJS và UI/UX với hơn 5 năm kinh nghiệm. Đam mê thiết
+          kế các giao diện người dùng hiện đại và hiệu suất cao.
+        </p>
+      </li>
+      <li class="card">
+        <div class="avatar">☠️</div>
+        <h3>Nguyễn Ngọc Mai</h3>
+        <p class="role">PROJECT MANAGER</p>
+        <p class="bio">
+          Điều phối viên dự án tài ba, quản lý rủi ro và điều hướng team vượt
+          qua những thử thách công nghệ phức tạp mỗi ngày.
+        </p>
+      </li>
+      <li class="card">
+        <div class="avatar">😎</div>
+        <h3>Lê Bá Khánh</h3>
+        <p class="role">BACKEND ENGINEER</p>
+        <p class="bio">
+          Xây dựng hệ thống Data phức tạp và kiến trúc Microservices. Node.js và
+          AWS là ban đồng hành không thể thiếu.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
