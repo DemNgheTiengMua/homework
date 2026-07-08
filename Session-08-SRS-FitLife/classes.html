@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch học & Bộ môn | FitLife Premium</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-sans text-zinc-700 antialiased">
+    <!-- Header / Navigation (same on all 3 pages) -->
+    <header class="sticky top-0 z-50 bg-zinc-900/95 text-white shadow-lg backdrop-blur">
+      <div
+        class="container mx-auto flex flex-col items-center justify-between px-6 py-4 md:flex-row"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+          Fit<span class="text-lime-400">Life</span>
+        </a>
+        <nav class="mt-3 flex gap-8 text-sm font-medium md:mt-0">
+          <a href="index.html" class="text-zinc-300 transition hover:text-lime-400">Trang chủ</a>
+          <a href="classes.html" class="text-lime-400">Lịch học</a>
+          <a href="contact.html" class="text-zinc-300 transition hover:text-lime-400">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page title -->
+    <section
+      class="relative bg-cover bg-center py-24 text-center text-white"
+      style="
+        background-image: linear-gradient(rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.7)),
+          url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80');
+      "
+    >
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl">Lịch học & Bộ môn</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-zinc-200">
+          Đa dạng bộ môn phù hợp mọi cấp độ. Xem thời gian biểu và chọn lớp phù
+          hợp với lịch trình của bạn.
+        </p>
+      </div>
+    </section>
+
+    <!-- Class list -->
+    <section class="container mx-auto px-6 py-20">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-wider text-lime-600">Bộ môn</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+          Các bộ môn đang triển khai
+        </h2>
+      </div>
+      <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Class card -->
+        <article class="group overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm transition hover:shadow-lg">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=500&q=80"
+              alt="Lớp Yoga"
+              class="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-zinc-900">Yoga</h3>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-600">
+              Cân bằng cơ thể và tinh thần, cải thiện sự dẻo dai và giảm căng
+              thẳng.
+            </p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm transition hover:shadow-lg">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80"
+              alt="Lớp Pilates"
+              class="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-zinc-900">Pilates</h3>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-600">
+              Tăng cường cơ lõi (core), cải thiện tư thế và sự kiểm soát cơ thể.
+            </p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm transition hover:shadow-lg">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=500&q=80"
+              alt="Phòng Gym"
+              class="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-zinc-900">Gym</h3>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-600">
+              Khu tạ tự do và máy móc hiện đại cho mục tiêu tăng cơ, giảm mỡ.
+            </p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm transition hover:shadow-lg">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=500&q=80"
+              alt="Lớp Zumba"
+              class="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-zinc-900">Zumba</h3>
+            <p class="mt-2 text-sm leading-relaxed text-zinc-600">
+              Đốt calo cực đã trên nền nhạc sôi động, kết hợp vũ đạo vui nhộn.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Weekly timetable -->
+    <section class="bg-zinc-50 py-20">
+      <div class="container mx-auto px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-wider text-lime-600">Thời khóa biểu</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+            Thời gian biểu trong tuần
+          </h2>
+        </div>
+        <div class="mt-12 overflow-x-auto rounded-2xl border border-zinc-100 bg-white shadow-sm">
+          <table class="w-full min-w-[640px] text-left text-sm">
+            <thead class="bg-zinc-900 text-white">
+              <tr>
+                <th class="p-4 font-semibold">Khung giờ</th>
+                <th class="p-4 font-semibold">Thứ 2 - 4 - 6</th>
+                <th class="p-4 font-semibold">Thứ 3 - 5 - 7</th>
+                <th class="p-4 font-semibold">Chủ nhật</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-zinc-100">
+              <tr class="transition hover:bg-lime-50">
+                <td class="p-4 font-semibold text-zinc-900">06:00 - 07:30</td>
+                <td class="p-4">Yoga</td>
+                <td class="p-4">Pilates</td>
+                <td class="p-4">Gym tự do</td>
+              </tr>
+              <tr class="transition hover:bg-lime-50">
+                <td class="p-4 font-semibold text-zinc-900">17:30 - 19:00</td>
+                <td class="p-4">Gym (PT)</td>
+                <td class="p-4">Zumba</td>
+                <td class="p-4">Yoga</td>
+              </tr>
+              <tr class="transition hover:bg-lime-50">
+                <td class="p-4 font-semibold text-zinc-900">19:15 - 20:45</td>
+                <td class="p-4">Zumba</td>
+                <td class="p-4">Gym (PT)</td>
+                <td class="p-4 text-zinc-400">Nghỉ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainers -->
+    <section class="container mx-auto px-6 py-20">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-wider text-lime-600">Đội ngũ</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+          Đội ngũ Huấn luyện viên
+        </h2>
+      </div>
+      <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-zinc-100 bg-white p-8 text-center shadow-sm transition hover:shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=400&q=80"
+            alt="Huấn luyện viên Minh Anh"
+            class="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-lime-100"
+          />
+          <h3 class="mt-5 text-xl font-bold text-zinc-900">Minh Anh</h3>
+          <p class="mt-1 text-sm font-medium text-lime-600">Chuyên gia Yoga & Pilates</p>
+        </div>
+        <div class="rounded-2xl border border-zinc-100 bg-white p-8 text-center shadow-sm transition hover:shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=400&q=80"
+            alt="Huấn luyện viên Quốc Bảo"
+            class="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-lime-100"
+          />
+          <h3 class="mt-5 text-xl font-bold text-zinc-900">Quốc Bảo</h3>
+          <p class="mt-1 text-sm font-medium text-lime-600">HLV Personal Training</p>
+        </div>
+        <div class="rounded-2xl border border-zinc-100 bg-white p-8 text-center shadow-sm transition hover:shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=400&q=80"
+            alt="Huấn luyện viên Thu Hà"
+            class="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-lime-100"
+          />
+          <h3 class="mt-5 text-xl font-bold text-zinc-900">Thu Hà</h3>
+          <p class="mt-1 text-sm font-medium text-lime-600">HLV Zumba & Cardio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (same on all 3 pages) -->
+    <footer class="bg-zinc-900 text-zinc-400">
+      <div class="container mx-auto grid gap-8 px-6 py-14 md:grid-cols-3">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold text-white">
+            Fit<span class="text-lime-400">Life</span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed">
+            Phòng tập cao cấp mang đến trải nghiệm luyện tập đẳng cấp và truyền
+            cảm hứng sống khỏe mỗi ngày.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Liên kết nhanh</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="index.html" class="transition hover:text-lime-400">Trang chủ</a></li>
+            <li><a href="classes.html" class="transition hover:text-lime-400">Lịch học & Bộ môn</a></li>
+            <li><a href="contact.html" class="transition hover:text-lime-400">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Kết nối với chúng tôi</h3>
+          <ul class="mt-4 flex gap-4 text-sm font-medium">
+            <li><a href="#" class="transition hover:text-lime-400">Facebook</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">Instagram</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 py-5 text-center text-sm">
+        &copy; 2026 FitLife Premium Fitness Club. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

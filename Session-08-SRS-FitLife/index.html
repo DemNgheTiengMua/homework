@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife Premium Fitness Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-sans text-zinc-700 antialiased">
+    <!-- Header / Navigation (same on all 3 pages) -->
+    <header class="sticky top-0 z-50 bg-zinc-900/95 text-white shadow-lg backdrop-blur">
+      <div
+        class="container mx-auto flex flex-col items-center justify-between px-6 py-4 md:flex-row"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+          Fit<span class="text-lime-400">Life</span>
+        </a>
+        <nav class="mt-3 flex gap-8 text-sm font-medium md:mt-0">
+          <a href="index.html" class="text-lime-400">Trang chủ</a>
+          <a href="classes.html" class="text-zinc-300 transition hover:text-lime-400">Lịch học</a>
+          <a href="contact.html" class="text-zinc-300 transition hover:text-lime-400">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero / Banner section -->
+    <section
+      class="relative flex min-h-[85vh] items-center bg-cover bg-center text-white"
+      style="
+        background-image: linear-gradient(rgba(9, 9, 11, 0.75), rgba(9, 9, 11, 0.55)),
+          url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80');
+      "
+    >
+      <div class="container mx-auto px-6">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-lime-400">
+            Premium Fitness Club
+          </p>
+          <h1 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+            Nâng tầm thể chất, <br />
+            kiến tạo phiên bản tốt nhất
+          </h1>
+          <p class="mt-6 max-w-xl text-lg text-zinc-200">
+            Không gian tập luyện đẳng cấp, trang thiết bị hiện đại và đội ngũ
+            huấn luyện viên chuyên nghiệp đồng hành cùng bạn trên từng chặng
+            đường.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="contact.html"
+              class="rounded-full bg-lime-400 px-8 py-3.5 font-bold text-zinc-900 transition hover:bg-lime-300"
+            >
+              Đăng ký tư vấn
+            </a>
+            <a
+              href="classes.html"
+              class="rounded-full border border-white/40 px-8 py-3.5 font-bold text-white transition hover:bg-white/10"
+            >
+              Xem lịch học
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats band -->
+    <section class="bg-zinc-900 text-white">
+      <div class="container mx-auto grid grid-cols-2 gap-8 px-6 py-12 text-center md:grid-cols-4">
+        <div>
+          <p class="text-4xl font-extrabold text-lime-400">5.000+</p>
+          <p class="mt-1 text-sm text-zinc-400">Hội viên</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold text-lime-400">50+</p>
+          <p class="mt-1 text-sm text-zinc-400">Huấn luyện viên</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold text-lime-400">15+</p>
+          <p class="mt-1 text-sm text-zinc-400">Bộ môn</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold text-lime-400">10+</p>
+          <p class="mt-1 text-sm text-zinc-400">Năm kinh nghiệm</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro: Premium space -->
+    <section class="container mx-auto grid items-center gap-12 px-6 py-20 md:grid-cols-2">
+      <img
+        src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80"
+        alt="Không gian phòng tập FitLife Premium"
+        class="h-full w-full rounded-2xl object-cover shadow-xl"
+      />
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wider text-lime-600">Về chúng tôi</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+          Không gian đẳng cấp Premium
+        </h2>
+        <p class="mt-5 leading-relaxed text-zinc-600">
+          FitLife sở hữu hệ thống phòng tập rộng rãi, thoáng đãng với ánh sáng tự
+          nhiên và trang thiết bị nhập khẩu từ các thương hiệu hàng đầu thế giới.
+          Chúng tôi mang đến trải nghiệm luyện tập sang trọng, riêng tư và truyền
+          cảm hứng trong từng buổi tập.
+        </p>
+        <ul class="mt-6 space-y-3 text-zinc-700">
+          <li class="flex items-center gap-3">
+            <span class="flex h-6 w-6 items-center justify-center rounded-full bg-lime-100 text-sm text-lime-700">✓</span>
+            Trang thiết bị hiện đại, bảo trì định kỳ
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex h-6 w-6 items-center justify-center rounded-full bg-lime-100 text-sm text-lime-700">✓</span>
+            Phòng tắm & tủ đồ cao cấp
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex h-6 w-6 items-center justify-center rounded-full bg-lime-100 text-sm text-lime-700">✓</span>
+            Huấn luyện viên chứng chỉ quốc tế
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured services -->
+    <section class="bg-zinc-50 py-20">
+      <div class="container mx-auto px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-wider text-lime-600">Dịch vụ</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+            Dịch vụ nổi bật
+          </h2>
+          <p class="mt-4 text-zinc-600">
+            Đa dạng chương trình tập luyện được thiết kế riêng cho từng mục tiêu
+            của bạn.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-8 md:grid-cols-3">
+          <!-- Service card 1 -->
+          <div class="rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm transition hover:shadow-lg">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-lime-100 text-3xl">
+              🏋️
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-zinc-900">Personal Training</h3>
+            <p class="mt-3 leading-relaxed text-zinc-600">
+              Huấn luyện viên riêng đồng hành 1:1, xây dựng giáo án cá nhân hóa
+              theo thể trạng và mục tiêu.
+            </p>
+          </div>
+          <!-- Service card 2 -->
+          <div class="rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm transition hover:shadow-lg">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-lime-100 text-3xl">
+              🏃
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-zinc-900">Cardio Zone</h3>
+            <p class="mt-3 leading-relaxed text-zinc-600">
+              Khu vực cardio với máy chạy, xe đạp và máy leo núi thế hệ mới giúp
+              đốt mỡ và tăng sức bền hiệu quả.
+            </p>
+          </div>
+          <!-- Service card 3 -->
+          <div class="rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm transition hover:shadow-lg">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-lime-100 text-3xl">
+              🧘
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-zinc-900">Group X</h3>
+            <p class="mt-3 leading-relaxed text-zinc-600">
+              Các lớp tập nhóm sôi động: Yoga, Zumba, Pilates — tăng động lực và
+              kết nối cộng đồng hội viên.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action band -->
+    <section class="bg-lime-400">
+      <div
+        class="container mx-auto flex flex-col items-center justify-between gap-6 px-6 py-14 text-center md:flex-row md:text-left"
+      >
+        <div>
+          <h2 class="text-2xl font-extrabold tracking-tight text-zinc-900 md:text-3xl">
+            Sẵn sàng bắt đầu hành trình của bạn?
+          </h2>
+          <p class="mt-2 text-zinc-800">
+            Đăng ký buổi tập thử miễn phí ngay hôm nay.
+          </p>
+        </div>
+        <a
+          href="contact.html"
+          class="whitespace-nowrap rounded-full bg-zinc-900 px-8 py-3.5 font-bold text-white transition hover:bg-zinc-800"
+        >
+          Liên hệ ngay
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer (same on all 3 pages) -->
+    <footer class="bg-zinc-900 text-zinc-400">
+      <div class="container mx-auto grid gap-8 px-6 py-14 md:grid-cols-3">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold text-white">
+            Fit<span class="text-lime-400">Life</span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed">
+            Phòng tập cao cấp mang đến trải nghiệm luyện tập đẳng cấp và truyền
+            cảm hứng sống khỏe mỗi ngày.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Liên kết nhanh</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="index.html" class="transition hover:text-lime-400">Trang chủ</a></li>
+            <li><a href="classes.html" class="transition hover:text-lime-400">Lịch học & Bộ môn</a></li>
+            <li><a href="contact.html" class="transition hover:text-lime-400">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Kết nối với chúng tôi</h3>
+          <ul class="mt-4 flex gap-4 text-sm font-medium">
+            <li><a href="#" class="transition hover:text-lime-400">Facebook</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">Instagram</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 py-5 text-center text-sm">
+        &copy; 2026 FitLife Premium Fitness Club. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

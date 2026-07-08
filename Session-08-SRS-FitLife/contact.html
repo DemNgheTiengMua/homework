@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ | FitLife Premium</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-sans text-zinc-700 antialiased">
+    <!-- Header / Navigation (same on all 3 pages) -->
+    <header class="sticky top-0 z-50 bg-zinc-900/95 text-white shadow-lg backdrop-blur">
+      <div
+        class="container mx-auto flex flex-col items-center justify-between px-6 py-4 md:flex-row"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+          Fit<span class="text-lime-400">Life</span>
+        </a>
+        <nav class="mt-3 flex gap-8 text-sm font-medium md:mt-0">
+          <a href="index.html" class="text-zinc-300 transition hover:text-lime-400">Trang chủ</a>
+          <a href="classes.html" class="text-zinc-300 transition hover:text-lime-400">Lịch học</a>
+          <a href="contact.html" class="text-lime-400">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page title -->
+    <section
+      class="relative bg-cover bg-center py-24 text-center text-white"
+      style="
+        background-image: linear-gradient(rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.7)),
+          url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1600&q=80');
+      "
+    >
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl">Liên hệ với chúng tôi</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-zinc-200">
+          Để lại thông tin, đội ngũ FitLife sẽ liên hệ tư vấn gói tập phù hợp
+          nhất cho bạn trong thời gian sớm nhất.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact form + contact info -->
+    <section class="container mx-auto grid gap-10 px-6 py-20 lg:grid-cols-2">
+      <!-- Left column: contact form -->
+      <div class="rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm">
+        <h2 class="text-2xl font-bold tracking-tight text-zinc-900">Gửi lời nhắn</h2>
+        <p class="mt-2 text-sm text-zinc-500">Chúng tôi sẽ phản hồi trong vòng 24 giờ.</p>
+        <form class="mt-6 space-y-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-zinc-700">Họ và tên</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Nguyễn Văn A"
+              required
+              class="mt-1.5 w-full rounded-lg border border-zinc-300 px-4 py-2.5 text-sm transition focus:border-lime-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-700">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="email@example.com"
+              required
+              class="mt-1.5 w-full rounded-lg border border-zinc-300 px-4 py-2.5 text-sm transition focus:border-lime-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-zinc-700">Số điện thoại</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="0900 000 000"
+              class="mt-1.5 w-full rounded-lg border border-zinc-300 px-4 py-2.5 text-sm transition focus:border-lime-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-zinc-700">Nội dung lời nhắn</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Tôi muốn được tư vấn về gói tập..."
+              class="mt-1.5 w-full rounded-lg border border-zinc-300 px-4 py-2.5 text-sm transition focus:border-lime-500 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-full bg-lime-400 px-6 py-3.5 font-bold text-zinc-900 transition hover:bg-lime-300"
+          >
+            Gửi thông tin
+          </button>
+        </form>
+      </div>
+
+      <!-- Right column: direct contact info -->
+      <div class="space-y-6">
+        <div class="rounded-2xl border border-zinc-100 bg-white p-8 shadow-sm">
+          <h2 class="text-2xl font-bold tracking-tight text-zinc-900">Thông tin liên lạc</h2>
+          <ul class="mt-6 space-y-5 text-zinc-700">
+            <li class="flex items-start gap-4">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lime-100 text-xl">📍</span>
+              <span>
+                <strong class="block text-zinc-900">Địa chỉ</strong>
+                Tầng 5, Tòa nhà FitLife Tower, 123 Nguyễn Huệ, Quận 1, TP.HCM
+              </span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lime-100 text-xl">📞</span>
+              <span>
+                <strong class="block text-zinc-900">Hotline</strong>
+                <a href="tel:19001234" class="text-lime-600 hover:underline">1900 1234</a>
+              </span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lime-100 text-xl">✉️</span>
+              <span>
+                <strong class="block text-zinc-900">Email</strong>
+                <a href="mailto:cskh@fitlife.vn" class="text-lime-600 hover:underline">cskh@fitlife.vn</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="overflow-hidden rounded-2xl border border-zinc-100 shadow-sm">
+          <iframe
+            title="Bản đồ đường đến FitLife Premium"
+            src="https://www.google.com/maps?q=Nguyen+Hue+Quan+1+Ho+Chi+Minh&output=embed"
+            class="h-72 w-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (same on all 3 pages) -->
+    <footer class="bg-zinc-900 text-zinc-400">
+      <div class="container mx-auto grid gap-8 px-6 py-14 md:grid-cols-3">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold text-white">
+            Fit<span class="text-lime-400">Life</span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed">
+            Phòng tập cao cấp mang đến trải nghiệm luyện tập đẳng cấp và truyền
+            cảm hứng sống khỏe mỗi ngày.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Liên kết nhanh</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="index.html" class="transition hover:text-lime-400">Trang chủ</a></li>
+            <li><a href="classes.html" class="transition hover:text-lime-400">Lịch học & Bộ môn</a></li>
+            <li><a href="contact.html" class="transition hover:text-lime-400">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Kết nối với chúng tôi</h3>
+          <ul class="mt-4 flex gap-4 text-sm font-medium">
+            <li><a href="#" class="transition hover:text-lime-400">Facebook</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">Instagram</a></li>
+            <li><a href="#" class="transition hover:text-lime-400">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 py-5 text-center text-sm">
+        &copy; 2026 FitLife Premium Fitness Club. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
