@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechGadget Admin - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex min-h-screen">
+      <!-- Sidebar: ẩn trên mobile, hiện từ md trở lên -->
+      <aside class="hidden md:flex md:flex-col w-56 bg-gray-900 text-gray-300">
+        <div class="px-5 py-4 text-white font-bold text-lg border-b border-gray-800">
+          TechGadget Admin
+        </div>
+        <nav class="flex flex-col p-3 gap-1">
+          <a href="#" class="bg-indigo-600 text-white rounded-lg px-3 py-2">
+            Tổng quan
+          </a>
+          <a href="#" class="hover:bg-gray-800 rounded-lg px-3 py-2">Đơn hàng</a>
+          <a href="#" class="hover:bg-gray-800 rounded-lg px-3 py-2">Sản phẩm</a>
+          <a href="#" class="hover:bg-gray-800 rounded-lg px-3 py-2">
+            Khách hàng
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Vùng nội dung chính -->
+      <main class="flex-1 p-6">
+        <input
+          type="text"
+          placeholder="Tìm kiếm mã đơn hàng, sản phẩm..."
+          class="w-full max-w-md border border-gray-300 rounded-lg px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+
+        <h1 class="text-xl font-bold text-gray-800 mb-4">Tổng quan hệ thống</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white rounded-xl shadow p-5">
+            <p class="text-sm text-gray-500 mb-1">Tổng doanh thu</p>
+            <p class="text-2xl font-bold text-gray-800">125.000.000 đ</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-5">
+            <p class="text-sm text-gray-500 mb-1">Đơn hàng mới</p>
+            <p class="text-2xl font-bold text-gray-800">342</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-5">
+            <p class="text-sm text-gray-500 mb-1">Khách hàng truy cập</p>
+            <p class="text-2xl font-bold text-gray-800">1,204</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-5">
+            <p class="text-sm text-gray-500 mb-1">Tỉ lệ chuyển đổi</p>
+            <p class="text-2xl font-bold text-gray-800">4.5%</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

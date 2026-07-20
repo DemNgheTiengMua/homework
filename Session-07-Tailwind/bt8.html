@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust - Bảng Giá Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Kích hoạt chế độ tối theo class trên thẻ <html>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 flex flex-col items-center justify-center p-6 relative"
+    >
+      <div
+        class="w-full max-w-sm bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center"
+      >
+        <h2 class="text-xl font-bold">Tour Đà Lạt</h2>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          3 Ngày 2 Đêm
+        </p>
+        <p class="mb-4">
+          <span class="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+            2.500.000đ
+          </span>
+          <span class="text-sm text-gray-500 dark:text-gray-400">/khách</span>
+        </p>
+        <ul class="text-sm space-y-2 mb-6">
+          <li>Khách sạn 4 sao trung tâm</li>
+          <li>Xe Limousine đưa đón tận nơi</li>
+          <li>Vé tham quan tất cả các điểm</li>
+        </ul>
+        <button
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold uppercase rounded-lg py-2 transition-colors duration-300"
+        >
+          Đặt tour ngay
+        </button>
+      </div>
+
+      <button
+        onclick="document.documentElement.classList.toggle('dark')"
+        class="fixed bottom-6 right-6 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-100 text-sm font-medium rounded-full shadow-lg px-4 py-2"
+      >
+        Đổi Giao Diện
+      </button>
+    </div>
+  </body>
+</html>
