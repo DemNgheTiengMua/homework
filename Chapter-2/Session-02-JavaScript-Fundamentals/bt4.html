@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BT4 - Block Scope</title>
+    <script src="./Script/bt4.js" defer></script>
+  </head>
+  <body>
+    <p>
+      let có phạm vi khối nên x = 20 chỉ tồn tại bên trong cặp dấu {} và che
+      khuất biến x = 10 bên ngoài. Sau khi kết thúc block, biến bên trong không
+      còn được truy cập nên Console tiếp tục hiển thị x = 10. Biến const không
+      thể được gán lại, vì vậy việc gán myConstant = 200 gây lỗi TypeError:
+      Assignment to constant variable.
+    </p>
+  </body>
+</html>
