@@ -4,7 +4,6 @@ lab/normal-tag.html
 lab/self-closing-tag.html
 lab/semantic-tags.html
 
-# Question screenshots (provided, not homework output)
 Session-06-Bootstrap/Question/
 Session-07-Tailwind/Question/
 .gitignore
@@ -12,3 +11,6 @@ AGENTS.md
 .gitignore
 .vscode/settings.json
 Session-08-SRS-FitLife/EXPLAINER.md
+Chapter-2/Session-04-Arrays-Functions/GIAI-THICH.md
+Chapter-2/Session-05-JavaScript-DOM-Form-Validation/GIAI-THICH.md
+Chapter-2/Session-06-Modern-JavaScript-ES6/GIAI-THICH.md
