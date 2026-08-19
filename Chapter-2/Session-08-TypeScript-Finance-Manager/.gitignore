@@ -3,6 +3,5 @@ dist
 .DS_Store
 *.log
 
-# Personal / meta docs — keep offline, not in submitted repo
+# Personal study notes — keep offline, not in submitted repo
 CHEATSHEET.md
-README.md
