@@ -1,0 +1,555 @@
+/* ==========================================================================
+   style.css — Giao diện "Ví Của Tôi".
+   Phong cách: dashboard tài chính tối giản, sạch (canon).
+   Màu: xanh = thu/số dư dương, đỏ = chi/cảnh báo (NFR-6).
+   ========================================================================== */
+
+/* ----- Design tokens: gom mọi màu & khoảng cách vào một chỗ ----- */
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --ink: #1a1d23;
+  --ink-soft: #5a6372;
+  --line: #e4e7ec;
+  --accent: #4f46e5;
+  --accent-soft: #eef2ff;
+  --income: #15803d;
+  --income-soft: #ecfdf3;
+  --expense: #b91c1c;
+  --expense-soft: #fef3f2;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.06),
+    0 4px 12px rgba(16, 24, 40, 0.05);
+  --shadow-pop: 0 8px 24px rgba(16, 24, 40, 0.12);
+
+  --space-1: 6px;
+  --space-2: 12px;
+  --space-3: 18px;
+  --space-4: 26px;
+  --space-5: 40px;
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* ----- Reset nhẹ ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Số tiền dùng chữ số bảng (tabular) để các cột thẳng hàng */
+.num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ----- Header dính trên cùng ----- */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(247, 248, 250, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.app-header__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brand svg {
+  color: var(--accent);
+}
+
+.month-picker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.month-picker label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* ----- Vùng nội dung chính ----- */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-4);
+}
+
+section {
+  display: grid;
+  gap: var(--space-3);
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.section-hint {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: calc(-1 * var(--space-2));
+}
+
+/* ----- Dashboard: 3 thẻ thống kê (F01) ----- */
+.stats {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: var(--space-1);
+}
+
+.stat-card__label {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-card__value--balance {
+  font-size: 2.4rem;
+}
+
+.value-income {
+  color: var(--income);
+}
+.value-expense {
+  color: var(--expense);
+}
+
+/* ----- Thanh tiến trình ngân sách (F01-3) ----- */
+.budget {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.budget__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.budget__track {
+  height: 12px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.budget__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--income);
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.budget__fill--over {
+  background: var(--expense);
+}
+
+.badge {
+  font-size: 0.78rem;
+  font-weight: 650;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.badge--ok {
+  background: var(--income-soft);
+  color: var(--income);
+}
+
+.badge--over {
+  background: var(--expense-soft);
+  color: var(--expense);
+}
+
+/* ----- Bố cục 2 cột: giao dịch + danh mục ----- */
+.columns {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.panel__head {
+  padding: var(--space-3) var(--space-3);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.panel__body {
+  padding: var(--space-3);
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* ----- Form (thêm giao dịch / danh mục) ----- */
+form {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field {
+  display: grid;
+  gap: 5px;
+}
+
+.field label {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+input,
+select {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 9px 11px;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+/* Nút bật/tắt Thu / Chi */
+.type-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background: var(--bg);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+}
+
+.type-toggle button {
+  font: inherit;
+  border: none;
+  background: transparent;
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.type-toggle button[aria-pressed="true"] {
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.type-toggle button[data-type="income"][aria-pressed="true"] {
+  color: var(--income);
+}
+.type-toggle button[data-type="expense"][aria-pressed="true"] {
+  color: var(--expense);
+}
+
+/* Nút chính / phụ */
+.btn {
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  transition: filter 0.15s ease, background 0.15s ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn--primary:hover {
+  filter: brightness(1.08);
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn--ghost:hover {
+  background: var(--bg);
+}
+
+.btn--sm {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 7px;
+  display: inline-flex;
+}
+.icon-btn:hover {
+  background: var(--bg);
+  color: var(--expense);
+}
+
+/* Thông báo lỗi nhập liệu (EXTRA-1) */
+.form-error {
+  font-size: 0.82rem;
+  color: var(--expense);
+  min-height: 1.2em;
+}
+
+/* ----- Danh sách giao dịch (F03-3) ----- */
+.tx-list {
+  list-style: none;
+  display: grid;
+  gap: 2px;
+}
+
+.tx-item {
+  display: grid;
+  grid-template-columns: 40px 1fr auto auto;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+}
+.tx-item:hover {
+  background: var(--bg);
+}
+
+.tx-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+}
+.tx-icon--income {
+  background: var(--income-soft);
+  color: var(--income);
+}
+.tx-icon--expense {
+  background: var(--expense-soft);
+  color: var(--expense);
+}
+
+.tx-main {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+.tx-note {
+  font-weight: 550;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tx-meta {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.tx-amount {
+  font-weight: 650;
+}
+
+/* ----- Danh sách danh mục (F02-5) ----- */
+.cat-item {
+  display: grid;
+  gap: 8px;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--line);
+}
+.cat-item:last-child {
+  border-bottom: none;
+}
+
+.cat-item__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.cat-name {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cat-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.cat-progress {
+  display: grid;
+  gap: 4px;
+}
+.cat-track {
+  height: 7px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.cat-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+}
+.cat-fill--over {
+  background: var(--expense);
+}
+.cat-spent {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.cat-spent .over {
+  color: var(--expense);
+  font-weight: 650;
+}
+
+/* ----- Bảng tổng hợp các tháng (F05-2) ----- */
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+th,
+td {
+  text-align: right;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+thead th {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+tbody tr:hover {
+  background: var(--bg);
+}
+tfoot td {
+  font-weight: 700;
+  border-top: 2px solid var(--line);
+}
+
+/* ----- Trạng thái rỗng (empty state) ----- */
+.empty {
+  text-align: center;
+  color: var(--ink-soft);
+  padding: var(--space-4);
+  font-size: 0.9rem;
+}
+
+/* ----- Responsive: điện thoại xếp 1 cột (NFR-5) ----- */
+@media (max-width: 760px) {
+  main {
+    padding: var(--space-3);
+    gap: var(--space-3);
+  }
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .columns {
+    grid-template-columns: 1fr;
+  }
+  .stat-card__value--balance {
+    font-size: 2rem;
+  }
+}
+
+
+
